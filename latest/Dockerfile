@@ -15,4 +15,5 @@ sed -i 's/^error_reporting = .*/error_reporting = E_ALL \& ~E_DEPRECATED \& ~E_S
 rm -rf /var/lib/apt/lists/*
 
 #RUN ln -sf /dev/stdout /var/log/apache2/access.log
+
 RUN ln -sf /dev/stdout /var/log/apache2/error.log
